@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Viewer</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    
+    
+  </head>
+  <body>
+    <div class="control">
+      <div class="container">
+        <form method="post" enctype="multipart/form-data">
+          
+          <input type="file" id="thumbnail">
+          
+          <input type="reset" value="Delete Image" id="delete">
+          
+          <button id="reload">Reload Page</button>
+        </form>
+      </div>
+    </div>
+    <div class="display">
+      <div class="container">
+        <div id="grid"></div>
+        <div class="settings-pane">
+          <div class="setting-content">
+            <label for="visibility">Show/Hide Grid</label>
+            <input type="checkbox" id="visibility" name="visibility" />
+            <label for="grid-12">12 Column</label>
+            <input type="radio" id="grid-12" value="grid-12" name="grid-number" />
+            <label for="grid-16">16 Column</label>
+            <input type="radio" id="grid-16" value="grid-16" name="grid-number" />
+            <label for="gap">Add Gap</label>
+            <input type="checkbox" id="gap" name="gap" />
+            <label for="border">Display Container</label>
+            <input type="checkbox" id="border" name="border" />
+            <label for="custom">Custom Container</label>
+            <input type="number" min="640" max="1440" value="1200" id="custom" name="custom" />
+          </div>
+          <div class="setting-icon">
+            <span class="fontawesome-cog"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/grid.js"></script>
+    <script src="assets/js/upload.js"></script>
+  </body>
+</html> 
