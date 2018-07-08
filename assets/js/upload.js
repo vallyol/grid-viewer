@@ -21,7 +21,6 @@ $(document).ready(function(){
   
   $('#delete').on('click', function() {
     $('#prewiew').remove();
-    //location.reload(true);
   });
 
 });
