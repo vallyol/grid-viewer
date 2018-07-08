@@ -18,8 +18,6 @@ $(document).ready(function() {
   
   $('input[name="grid-number"]').change(function() {
     if (this.value == 'grid-12') {
-      //$('.span-1-16').remove();
-      
       $('#grid').addClass('grid-12').removeClass('grid-16');
       $('.grid-12 .span-1-16').remove();
       i = 0;
@@ -28,15 +26,12 @@ $(document).ready(function() {
       }
       
     } else if (this.value == 'grid-16') {
-      //$('.span-1-12').remove();
-      
       $('#grid').addClass('grid-16').removeClass('grid-12');
       $('.grid-16 .span-1-12').remove();
       i = 0;
       while (i < 16) {
         $('.grid-16').append('<span class="span-1-16">'+(i+1)+'</span>');i++;
       }
-      
     }
   });
   
